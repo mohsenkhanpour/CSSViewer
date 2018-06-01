@@ -45,7 +45,7 @@ chrome.browserAction.onClicked.addListener(function(tab)
 	}
 
 	browser.tabs.executeScript(tab.id, {file:'js/cssviewer.js'});
-	chrome.tabs.insertCSS(tab.id, {file:'css/cssviewer.css'});
+	browser.tabs.insertCSS(tab.id, {file:'css/cssviewer.css'});
 
 	cssViewerLoaded = true;
 });
