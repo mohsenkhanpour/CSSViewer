@@ -12,7 +12,7 @@ var cssViewerLoaded              = false;
 var cssCiewerContextMenusParent  = null;
 
 // Check whether new version is installed
-chrome.runtime.onInstalled.addListener(function(details){
+browser.runtime.onInstalled.addListener(function(details){
 	if(details.reason == "install" || details.reason == "update" ){
 		chrome.tabs.create( {url: "option.html"} );
 	}
