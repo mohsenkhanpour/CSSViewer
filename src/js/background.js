@@ -1,11 +1,11 @@
 /*!
-* CSSViewer, A Google Chrome Extension for fellow web developers, web designers, and hobbyists.
+* CSSViewer, A Mozilla Firefox Web Extension for fellow web developers, web designers, and hobbyists.
+* https://github.com/mohsenkhanpour/CSSViewer
+* 
 *
-* https://github.com/miled/cssviewer
-* https://chrome.google.com/webstore/detail/cssviewer/ggfgijbpiheegefliciemofobhmofgce
-*
-* This source code is licensed under the GNU General Public License,
-* Version 2. See the file COPYING for more details.
+* This source code is licensed under the Mozilla Public License,
+* Version 2.0.
+* Mohsen Khanpour, 2018
 */
 
 var cssViewerLoaded              = false; 
