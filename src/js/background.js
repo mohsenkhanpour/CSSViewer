@@ -44,7 +44,7 @@ chrome.browserAction.onClicked.addListener(function(tab)
 		browser.menus.create( { "title": "element.simpleCssDefinition", contexts:["all"] , "parentId": cssCiewerContextMenusParent, "onclick": cssCiewerDebugElSimpleCssDefinition } );
 	}
 
-	chrome.tabs.executeScript(tab.id, {file:'js/cssviewer.js'});
+	browser.tabs.executeScript(tab.id, {file:'js/cssviewer.js'});
 	chrome.tabs.insertCSS(tab.id, {file:'css/cssviewer.css'});
 
 	cssViewerLoaded = true;
@@ -52,40 +52,40 @@ chrome.browserAction.onClicked.addListener(function(tab)
 
 function cssCiewerDebugEl( info, tab )
 {
-	chrome.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("el")'});
+	browser.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("el")'});
 }
 
 function cssCiewerDebugElId( info, tab )
 {
-	chrome.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("id")'});
+	browser.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("id")'});
 }
 
 function cssCiewerDebugElTagName( info, tab )
 {
-	chrome.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("tagName")'});
+	browser.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("tagName")'});
 }
 
 function cssCiewerDebugElClassName( info, tab )
 {
-	chrome.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("className")'});
+	browser.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("className")'});
 }
 
 function cssCiewerDebugElStyle( info, tab )
 {
-	chrome.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("style")'});
+	browser.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("style")'});
 }
 
 function cssCiewerDebugElCssText( info, tab )
 {
-	chrome.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("cssText")'});
+	browser.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("cssText")'});
 }
  
 function cssCiewerDebugElGetComputedStyle( info, tab )
 {
-	chrome.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("getComputedStyle")'});
+	browser.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("getComputedStyle")'});
 }
 
 function cssCiewerDebugElSimpleCssDefinition( info, tab )
 {
-	chrome.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("simpleCssDefinition")'});
+	browser.tabs.executeScript(tab.id, {code:'cssViewerCopyCssToConsole("simpleCssDefinition")'});
 }
