@@ -21,7 +21,7 @@ browser.runtime.onInstalled.addListener(function(details){
 /*
 * Inject cssviewer.js/cssviewer.css into the current page
 */
-chrome.browserAction.onClicked.addListener(function(tab)
+browser.browserAction.onClicked.addListener(function(tab)
 {
 	if( tab.url.indexOf("https://chrome.google.com") == 0 || tab.url.indexOf("chrome://") == 0 )
 	{
