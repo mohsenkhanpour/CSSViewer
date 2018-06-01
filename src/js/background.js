@@ -14,7 +14,7 @@ var cssCiewerContextMenusParent  = null;
 // Check whether new version is installed
 browser.runtime.onInstalled.addListener(function(details){
 	if(details.reason == "install" || details.reason == "update" ){
-		chrome.tabs.create( {url: "option.html"} );
+		browser.tabs.create( {url: "option.html"} );
 	}
 });
 
