@@ -973,7 +973,7 @@ function cssViewerRemoveElement(divid)
 }
 
 /*
-* Copy current element css to chrome console
+* Copy current element CSS to Firefox console
 */
 function cssViewerCopyCssToConsole(type)
 {   
