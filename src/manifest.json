@@ -1,6 +1,6 @@
 {   "name":"CSSViewer",
     "manifest_version":2,
-    "version":"1.0",
+    "version":"1.1",
     "description":"A simple CSS property viewer. For Firefox Quantum",
     "icons":{"16":"img/16.png","22":"img/22.png","24":"img/24.png","32":"img/32.png","48":"img/48.png"},
     "options_ui": {
