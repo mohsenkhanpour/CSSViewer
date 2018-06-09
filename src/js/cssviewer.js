@@ -744,7 +744,7 @@ function CSSViewer()
 			footer.id = 'CSSViewer_footer';
 
 			//< 
-			footer.appendChild( document.createTextNode('CSSViewer 1.7. keys: [f] Un/Freeze. [c] Css. [Esc] Close.') ); 
+			footer.appendChild( document.createTextNode('CSSViewer 1.1. Keys: [F] Un/Freeze. [C] CSS. [ESC] Close.') ); 
 			block.appendChild(footer);
 		}
 		
