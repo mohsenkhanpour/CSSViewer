@@ -1,14 +1,58 @@
-{   "name":"CSSViewer",
-    "manifest_version":2,
-    "version":"1.1",
-    "description":"A simple CSS property viewer. For Firefox Quantum",
-    "icons":{"16":"img/16.png","22":"img/22.png","24":"img/24.png","32":"img/32.png","48":"img/48.png"},
-    "options_ui": {
-        "page": "option.html",
-        "browser_style": true
-      },
-    "background":{"page":"background.html"},
-    "browser_action":{"default_icon":"img/16.png","default_title":"CSSViewer"},
-    "web_accessible_resources":["img/header.png","img/body.png","img/list.png","img/footer.png","img/bullet.png"],
-    "permissions":["tabs","http://*/*","https://*/*","file://*/*","contextMenus"],
-    "applications":{"gecko":{"id":"CSSViewer@quantum"}}}
+{   
+	"name":"CSSViewer",
+	"manifest_version":2,
+	"version":"1.1",
+
+	"description":"A simple CSS property viewer. For Firefox Quantum",
+
+	"icons":{
+		"16":"img/16.png",
+		"22":"img/22.png",
+		"24":"img/24.png",
+		"32":"img/32.png",
+		"48":"img/48.png"
+	},
+
+	"options_ui": {
+		"page": "option.html",
+		"browser_style": true
+	},
+
+	"background":{
+		"page":"background.html"
+	},
+
+	"browser_action":{
+		"default_icon":"img/16.png",
+		"default_title":"CSSViewer"
+	},
+
+	"web_accessible_resources":[
+		"img/header.png",
+		"img/body.png",
+		"img/list.png",
+		"img/footer.png",
+		"img/bullet.png"
+	],
+	
+	"permissions":[
+		"tabs","http://*/*",
+		"https://*/*",
+		"file://*/*",
+		"contextMenus"
+	],
+
+	"applications":{
+		"gecko":{
+			"id":"CSSViewer@quantum"
+		}
+	}
+
+	"commands": {
+		"_execute_browser_action": {
+			"suggested_key": {
+				"default": "Shift+Alt+X"
+			}
+		}
+	}
+}
